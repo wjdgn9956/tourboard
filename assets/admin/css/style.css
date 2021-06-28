@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+* { box-sizing: border-box; color: #212121; font-family: 'Nanum Gothic', sans-serif; outline: none; }
+body { padding: 0; margin: 0; }
+html { font-size: 13px; }
+a { text-decoration: none; }
+ul { list-style: none; padding: 0; margin: 0; }
+
+/* 공통 S */
+.title1 { font-size: 13px; font-weight: bold; box-shadow: 2px 2px 5px #d5d5d5; padding: 7px 20px; border-radius: 3px; }
+
+dl { padding: 0; margin: 0; display: table; width: 100%; }
+dt { display: table-cell; vertical-align: middle; width: 120px; padding: 10px; }
+dd { display: table-cell; vertical-align: middle; padding: 10px; }
+input[type='text'], 
+input[type='password'], 
+input[type='email'], 
+input[type='number'], select { border: 1px solid #d5d5d5; height: 35px; border-radius: 5px; width: 100%; padding: 0 10px; }
+input[type='text']:focus, 
+input[type='password']:focus, 
+input[type='email']:focus, 
+input[type='number']:focus, select:focus { border-color: blue; }
+
+textarea { border: 1px solid #d5d5d5; padding: 10px; width: 100%; min-height: 150px; resize: none; border-radius: 5px; }
+
+.content_box { margin: 20px; }
+
+.btn1 { background-color: blue; border: 0; color: #ffffff; padding: 10px 25px; border-radius: 5px; cursor: pointer; }
+.btn1:hover { background-color: skyblue; color: #212121; }
+
+.btn2 { background-color: orange; border: 0; color: #ffffff; padding: 5px 10px; border-radius: 5px; cursor: pointer; font-size: 11px; display: inline-block; }
+
+.mt10 { margin-top: 10px !important; }
+.mt20 { margin-top: 20px !important; }
+.mb20 { margin-bottom: 20px !important; }
+
+.w120 { width: 120px !important; }
+
+/* 테이블 공통 */
+.table_rows { width: 100%; border-spacing: 0; padding: 0; }
+.table_rows th { background-color: #034efc; color: #ffffff; padding: 7px 10px; border-left: 1px solid #ffffff; }
+.table_rows tr th:first-child { border-left: 0; }
+.table_rows td { border-bottom: 1px solid #f8f8f8; padding: 7px 10px; }
+.table_rows tbody tr:nth-child(2n) td { background-color: #f5f5d5; }
+
+.table_cols { width: 100%; border-spacing: 0; padding: 0; }
+.table_cols th { background-color: #f8f8f8; width: 120px; padding: 10px; border-bottom: 1px solid #d5d5d5; }
+.table_cols td { padding: 10px; border-bottom: 1px solid #d5d5d5; }
+.table_cols tr:first-child th, .table_cols tr:first-child td { border-top: 1px solid #d5d5d5; }
+
+/* 페이지네이션 */
+.pagination { text-align: center; padding: 15px 0; }
+
+
+.action_box { background-color: #f8f8f8; padding: 5px 10px; border: 1px solid #d5d5d5; }
+.action_box select { max-width: 150px; margin-right: 5px; }
+
+/** 레이어 팝업 */
+.dn { display: none !important; }
+#layer_dim { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100; background:rgba(0, 0, 0, 0.7); cursor: pointer; }
+#layer_popup { position: fixed; top: 0; left: 0; background-color: #ffffff; overflow: hidden; border-radius: 20px; z-index: 101; }
+
+/** 파일 box */
+.file_box { border: 1px solid #d5d5d5; padding: 7px 10px; border-radius: 5px; cursor: pointer; margin-right: 2px; }
+.file_box i { font-size: 15px; vertical-align: middle; }
+.file_box a:hover { text-decoration: underline; }
+
+.addImage { display: inline-block; width: 45px; height: 45px; text-align: center; line-height: 45px; border: 1px solid #212121; cursor: pointer; vertical-align: middle; }
+.addImage i { font-size: 20px; }
+.add_uploaded_image .images { display: inline-block; width: 45px; height: 45px; border: 1px solid #212121; position: relative; vertical-align: middle; }
+.add_uploaded_image .images .remove { position: absolute; top: 0; right: 0; display: block; width: 10px; height: 10px; font-size: 9px; background-color: #212121; color: #ffffff; cursor: pointer; }
+.add_uploaded_image .images .zoom { position: absolute; bottom:0; left: 0; cursor: pointer; }
+/* 공통 E */
+
+
+/*  메인 메뉴 - /menus/main.php  S */
+.main_menu { background-color: #d5d5d5; }
+.main_menu:after { clear: left; content: ''; display: block; }
+.main_menu li { float: left; }
+.main_menu li a { display: block; padding: 20px; font-weight: bold; font-size: 15px; }
+.main_menu li a:hover, .main_menu li a.on { background-color: orange; }
+
+/*  메인 메뉴 - /menus/main.php  E */
+
+/* 서브 메뉴 S */
+.sub_menu { background-color: #a5c2f0; }
+.sub_menu:after { clear: left; content: ''; display: block; }
+.sub_menu li { float: left; }
+.sub_menu li a { display: block; padding: 15px 20px; font-weight: bold; }
+.sub_menu li a:hover, .sub_menu li a.on { background-color: #3474d9; }
+/* 서브 메뉴 E */
